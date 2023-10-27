@@ -1,0 +1,39 @@
+@import "./color.scss";
+
+.dekstopShareCard {
+  align-items: center;
+  background-color: $very-dark-grayish-blue;
+  border-radius: 5px;
+  column-gap: 2rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1.3rem 2rem;
+  position: relative;
+  width: 170px;
+
+  p {
+    color: $grayish-blue;
+    letter-spacing: 3px;
+  }
+
+  .socialIcons {
+    align-items: center;
+    column-gap: 1rem;
+    display: flex;
+
+    img {
+      width: 1.5rem;
+    }
+  }
+}
+
+.dekstopShareCard::after {
+  background-color: $very-dark-grayish-blue;
+  bottom: -10%;
+  content: "";
+  height: 1.5rem;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 1.5rem;
+}
